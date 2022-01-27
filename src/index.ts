@@ -26,9 +26,9 @@ interface RawRule {
   meta: RuleMeta
 }
 
-type Rules = ReadonlyMap<string, RawRule>
+type RawRules = ReadonlyMap<string, RawRule>
 
-export async function getRules(options: GetOptions): Promise<Rules> {
+export async function getRawRules(options: GetOptions): Promise<RawRules> {
   const configArrayFactory = new Legacy.CascadingConfigArrayFactory({
     cliConfig: { plugins: options.plugins },
     useEslintrc: false
@@ -47,4 +47,17 @@ export async function getRules(options: GetOptions): Promise<Rules> {
       yield* configArrayFactory.getConfigArrayForFile().pluginRules
     })()
   )
+}
+
+export async function getFixableRules(options: GetOptions): Promise<Set<string>> {
+  const result = new Set<string>()
+
+  const rules = await getRawRules(options)
+  for (const [ ruleId, rule ] of rules) {
+    if (!!rule.meta.fixable) {
+      result.add(ruleId)
+    }
+  }
+
+  return result
 }
