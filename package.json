@@ -1,0 +1,44 @@
+{
+  "name": "eslint-get-rules",
+  "version": "0.0.1",
+  "description": "Tool for getting meta-data of eslint rules in the current project.",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "dev": "preppy --watch",
+    "build": "preppy"
+  },
+  "files": [
+    "lib/"
+  ],
+  "author": {
+    "name": "Sebastian Werner",
+    "email": "s.werner@sebastian-software.de",
+    "url": "http://sebastian-software.de/werner"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "eslint",
+    "util"
+  ],
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "core-js": "^3.20.3",
+    "eslint": "^8.7.0",
+    "eslint-plugin-jsdoc": "^37.7.0",
+    "jest": "^27.4.7",
+    "preppy": "^11.0.2",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@eslint/eslintrc": "^1.0.5",
+    "pkg-dir": "^6.0.1"
+  },
+  "peerDependencies": {
+    "eslint": "^8.7.0"
+  }
+}
