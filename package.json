@@ -1,6 +1,6 @@
 {
   "name": "eslint-get-rules",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Tool for getting meta-data of eslint rules in the current project.",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
