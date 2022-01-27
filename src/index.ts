@@ -3,7 +3,7 @@ import { Legacy } from "@eslint/eslintrc"
 import pkgDir from "pkg-dir"
 
 interface GetOptions {
-  plugins: string[]
+  plugins?: string[]
 }
 
 interface RuleMetaDocs {
