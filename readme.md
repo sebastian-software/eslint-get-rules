@@ -2,17 +2,15 @@
 
 [![Sponsored by][sponsor-img]][sponsor] [![Version][npm-version-img]][npm]
 <br/>
-[![Downloads][npm-downloads-img]][npm] [![Build Status][github-img]][github]
+[![Downloads][npm-downloads-img]][npm] [![Node.js CI](https://github.com/sebastian-software/eslint-get-rules/actions/workflows/node.js.yml/badge.svg)](https://github.com/sebastian-software/eslint-get-rules/actions/workflows/node.js.yml)
 
 _Asset Hash_ is a quick wrapper around hashing libraries for efficient and fast hashing of asset files like images, web fonts, etc. By default it uses the cross-platform performance-optimized [XXHash-WASM](https://github.com/jungomi/xxhash-wasm) and a _Base52_ encoding (`[a-zA-Z]`) which works well for file names and urls and has a larger dictionary than when using traditional hex.
 
 [sponsor]: https://www.sebastian-software.de
 [npm]: https://www.npmjs.com/package/eslint-get-rules
-[github]: https://github.com/sebastian-software/eslint-get-rules/actions
 [sponsor-img]: https://badgen.net/badge/Sponsored%20by/Sebastian%20Software/c41e54
 [npm-downloads-img]: https://badgen.net/npm/dm/eslint-get-rules
 [npm-version-img]: https://badgen.net/npm/v/eslint-get-rules
-[github-img]: https://badgen.net/github/status/sebastian-software/eslint-get-rules?label=tests&icon=github
 
 ## Installation
 
