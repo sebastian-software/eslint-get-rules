@@ -4,7 +4,7 @@
 <br/>
 [![Downloads][npm-downloads-img]][npm] [![Node.js CI](https://github.com/sebastian-software/eslint-get-rules/actions/workflows/node.js.yml/badge.svg)](https://github.com/sebastian-software/eslint-get-rules/actions/workflows/node.js.yml)
 
-_Asset Hash_ is a quick wrapper around hashing libraries for efficient and fast hashing of asset files like images, web fonts, etc. By default it uses the cross-platform performance-optimized [XXHash-WASM](https://github.com/jungomi/xxhash-wasm) and a _Base52_ encoding (`[a-zA-Z]`) which works well for file names and urls and has a larger dictionary than when using traditional hex.
+_ESLint GetRules_ is a quick wrapper around core ESLint classes to access detailed rule information via API. Unfortunetely such an API is not (yet) available in ESLint itself.
 
 [sponsor]: https://www.sebastian-software.de
 [npm]: https://www.npmjs.com/package/eslint-get-rules
