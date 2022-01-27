@@ -9,7 +9,7 @@ describe("getRules", () => {
   })
 
   test("With JSDoc Plugin", async () => {
-    const rules = await getRules({ plugins: [ "jsdoc" ] })
+    const rules = await getRules({ plugins: ["jsdoc"] })
     const keys = Array.from(rules.keys())
     expect(keys.length).toBe(334)
     expect(keys).toMatchSnapshot()
